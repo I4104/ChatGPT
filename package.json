@@ -1,0 +1,50 @@
+{
+  "name": "igpt",
+  "productName": "IGPT",
+  "version": "1.0.0",
+  "description": "ChatGPT application",
+  "main": "src/index.js",
+  "homepage": "https://chatgpt.com",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "build": "electron-builder",
+    "lint": "echo \"No linting configured\""
+  },
+  "build": {
+    "appId": "com.i4104.igpt",
+    "productName": "IGPT",
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "target": [
+        "pacman"
+      ],
+      "category": "Utility"
+    }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "30.0.9",
+    "electron-builder": "^23.0.0"
+  },
+  "keywords": [],
+  "author": {
+    "name": "I4104.vn",
+    "email": "tuicontho@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  }
+}
